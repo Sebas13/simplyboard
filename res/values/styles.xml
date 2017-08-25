@@ -1,0 +1,56 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+<style name="RadioButton" parent="android:Theme">
+   <item name="android:radioButtonStyle">@style/RadioButton</item>
+</style>
+<style name="RadioButton_Blanco" parent="@android:style/Widget.CompoundButton.RadioButton">
+   <item name="android:button">@drawable/radio_blanco_selector</item>
+</style>
+<style name="RadioButton_Negro" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_negro_selector</item>
+</style>
+<style name="RadioButton_Gris" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_gris_selector</item>
+</style>
+<style name="RadioButton_Rojo" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_rojo_selector</item>
+</style>
+<style name="RadioButton_Naranja" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_naranja_selector</item>
+</style>
+<style name="RadioButton_Amarillo" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_amarillo_selector</item>
+</style>
+<style name="RadioButton_Verde" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_verde_selector</item>
+</style>
+<style name="RadioButton_VerdeBotella" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_verde_botella_selector</item>
+</style>
+<style name="RadioButton_Azul" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_azul_selector</item>
+</style>
+<style name="RadioButton_Borrador" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_borrador_selector</item>
+</style>
+<style name="RadioButton_MasColores" parent="@android:style/Widget.CompoundButton.RadioButton">
+    <item name="android:button">@drawable/radio_mas_colores_selector</item>
+</style>
+
+</resources>

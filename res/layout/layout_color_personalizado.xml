@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_dialogo_foto" >
+
+    <View
+        android:id="@+id/viewMostrarColor"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margen_view_seekbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <SeekBar       
+        android:id="@+id/seekBarRojoColorPersonalizado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewMostrarColor"
+        android:layout_alignParentLeft="true" />
+
+    <SeekBar       
+       android:id="@+id/seekBarVerdeColorPersonalizado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarRojoColorPersonalizado" />
+
+    <SeekBar
+        android:id="@+id/seekBarAzulColorPersonalizado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarVerdeColorPersonalizado" />
+
+    <ImageView
+        android:id="@+id/imageView1"        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seekBarRojoColorPersonalizado"
+        android:layout_alignTop="@+id/seekBarRojoColorPersonalizado"
+        android:src="@drawable/iv_rojo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seekBarAzulColorPersonalizado"
+        android:layout_alignTop="@+id/seekBarAzulColorPersonalizado"
+        android:src="@drawable/iv_azul" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seekBarVerdeColorPersonalizado"
+        android:layout_alignTop="@+id/seekBarVerdeColorPersonalizado"
+        android:src="@drawable/iv_verde" />
+
+</RelativeLayout>

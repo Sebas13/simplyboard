@@ -1,0 +1,264 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:animateLayoutChanges="true"
+    tools:context=".Pizarra" >
+
+    <Button
+        android:id="@+id/buttonMenuColores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonMenu"
+        android:layout_marginRight="@dimen/margen_button_layout_portrait"
+        android:background="@drawable/button_menu_colores_selector" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margen_button_layout_portrait"
+        android:layout_marginRight="@dimen/margen_button_layout_portrait"
+        android:layout_toLeftOf="@+id/buttonMenuColores"
+        android:background="@drawable/button_menu_selector" />
+
+    <SeekBar
+        android:id="@+id/seekBarSize"
+        android:layout_width="@dimen/scrollview_vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMenu"
+        android:layout_toLeftOf="@+id/buttonMenu"
+         android:layout_alignParentLeft="true"  />
+
+    <SeekBar
+        android:id="@+id/seekBarAlpha"
+        android:layout_width="@dimen/scrollview_vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/buttonMenu"
+        android:layout_toLeftOf="@+id/buttonMenu" />
+
+    <TextView
+        android:id="@+id/textViewAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seekBarAlpha"
+        android:layout_alignTop="@+id/seekBarAlpha"
+        android:text="@string/alfa"
+        android:textColor="@color/colorLetras"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seekBarSize"
+        android:layout_alignTop="@+id/seekBarSize"
+        android:text="@string/tamano"
+        android:textColor="@color/colorLetras"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+   
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewColores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonMenuColores"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/buttonMenuColores"
+        android:background="@color/colorFondoScrollView"
+        android:scrollbarDefaultDelayBeforeFade="50"
+        android:visibility="gone"
+         >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioNegro"
+                style="@style/RadioButton_Negro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:checked="true"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+<!-- Ahora RadioGris es radioRosa -->
+            <RadioButton
+                android:id="@+id/radioGris"
+                style="@style/RadioButton_Gris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+
+            <RadioButton
+                android:id="@+id/radioRojo"
+                style="@style/RadioButton_Rojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioNaranja"
+                style="@style/RadioButton_Naranja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioAmarillo"
+                style="@style/RadioButton_Amarillo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioVerde"
+                style="@style/RadioButton_Verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioVerdeBotella"
+                style="@style/RadioButton_VerdeBotella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioAzul"
+                style="@style/RadioButton_Azul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+            <!-- Ahora RadioGris es radioMorado -->
+            <RadioButton
+                android:id="@+id/radioBlanco"
+                style="@style/RadioButton_Blanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioBorrador"
+                style="@style/RadioButton_Borrador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:layout_marginRight="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioMasColores"
+                style="@style/RadioButton_MasColores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:layout_marginRight="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+        </RadioGroup>
+    </HorizontalScrollView>
+    
+     <app.slf.simplyboard.PizarraView
+        android:id="@+id/pizarraView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBarSize"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorFondoPizarra" />
+
+     <HorizontalScrollView
+         android:id="@+id/horizontalScrollViewMenu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_alignBottom="@+id/buttonMenu"
+         android:layout_toLeftOf="@+id/buttonMenu"
+         android:background="@color/colorFondoScrollView"
+         android:visibility="gone">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal" >
+
+             <Button
+                 android:id="@+id/buttonBorrar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:layout_marginRight="@dimen/margen_textView"
+                 android:layout_toRightOf="@+id/buttonGuardar"
+                 android:background="@drawable/button_borrar_selector" />
+
+             <Button
+                 android:id="@+id/buttonGuardar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:layout_marginRight="@dimen/margen_textView"
+                 android:layout_toRightOf="@+id/buttonFoto"
+                 android:background="@drawable/button_guardar_selector" />
+
+             <Button
+                 android:id="@+id/buttonFoto"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:layout_marginRight="@dimen/margen_textView"
+                 android:layout_toRightOf="@+id/buttonCompartir"
+                 android:background="@drawable/boton_foto_selector" />
+
+             <Button
+                 android:id="@+id/buttonCompartir"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:background="@drawable/button_compartir_selector" />
+
+         </RelativeLayout>
+     </HorizontalScrollView>
+
+</RelativeLayout>

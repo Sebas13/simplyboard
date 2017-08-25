@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLetras">#00addf</color>
+    <color name="colorFondoPizarra">#e6e6e6</color>
+    <color name="colorFondoScrollView">#999999</color>
+    
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:animateLayoutChanges="true">
+
+<HorizontalScrollView
+    android:id="@+id/HorizontalScrollViewColores"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" 
+   
+      >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioNegro"
+            style="@style/RadioButton_Negro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:checked="true"
+            android:height="@dimen/longitud_radioButton"
+            android:width="@dimen/longitud_radioButton" />
+
+        <RadioButton
+            android:id="@+id/radioGris"
+            style="@style/RadioButton_Gris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:height="@dimen/longitud_radioButton"
+            android:width="@dimen/longitud_radioButton" />
+
+        <RadioButton
+            android:id="@+id/radioRojo"
+            style="@style/RadioButton_Rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:height="@dimen/longitud_radioButton"
+            android:width="@dimen/longitud_radioButton" />
+
+        <RadioButton
+            android:id="@+id/radioNaranja"
+            style="@style/RadioButton_Naranja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:height="@dimen/longitud_radioButton"
+            android:width="@dimen/longitud_radioButton" />
+
+        <RadioButton
+            android:id="@+id/radioAmarillo"
+            style="@style/RadioButton_Amarillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:height="@dimen/longitud_radioButton"
+            android:width="@dimen/longitud_radioButton" />
+
+        <RadioButton
+            android:id="@+id/radioVerde"
+            style="@style/RadioButton_Verde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:height="@dimen/longitud_radioButton"
+            android:width="@dimen/longitud_radioButton" />
+
+        <RadioButton
+            android:id="@+id/radioVerdeBotella"
+            style="@style/RadioButton_VerdeBotella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:height="@dimen/longitud_radioButton"
+            android:width="@dimen/longitud_radioButton" />
+
+          <RadioButton
+              android:id="@+id/radioAzul"
+              style="@style/RadioButton_Azul"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margen_radio"
+              android:height="@dimen/longitud_radioButton"
+              android:width="@dimen/longitud_radioButton" />
+
+          <RadioButton
+              android:id="@+id/radioBlanco"
+              style="@style/RadioButton_Blanco"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margen_radio"
+              android:height="@dimen/longitud_radioButton"
+              android:width="@dimen/longitud_radioButton" />
+
+          <RadioButton
+            style="@style/RadioButton_Borrador"
+            android:id="@+id/radioBorrador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen_radio"
+            android:layout_marginRight="@dimen/margen_radio"
+            android:width="@dimen/longitud_radioButton"
+            android:height="@dimen/longitud_radioButton"
+             />
+
+            <RadioButton
+                android:id="@+id/radioMasColores"
+                style="@style/RadioButton_MasColores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margen_radio"
+                android:layout_marginRight="@dimen/margen_radio"
+                android:height="@dimen/longitud_radioButton"
+                android:width="@dimen/longitud_radioButton" />
+
+    </RadioGroup>
+</HorizontalScrollView>
+
+    <SeekBar
+        android:id="@+id/seekBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seekBarAlpha"
+        android:layout_below="@+id/seekBarAlpha" />
+
+    <SeekBar
+        android:id="@+id/seekBarAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HorizontalScrollViewColores"
+        android:layout_toLeftOf="@+id/buttonMenu" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seekBarAlpha"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button_menu_selector" />
+
+    <TextView
+        android:id="@+id/textViewAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekBarAlpha"
+        android:layout_marginRight="@dimen/margen_textView"
+        android:layout_toLeftOf="@+id/buttonMenu"
+        android:text="@string/alfa"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorLetras" />
+
+    <TextView
+        android:id="@+id/textViewSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekBarSize"
+        android:layout_marginRight="@dimen/margen_textView"
+        android:layout_toLeftOf="@+id/buttonMenu"
+        android:text="@string/tamano"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorLetras" />
+
+    <app.slf.simplyboard.PizarraView
+        android:id="@+id/pizarraView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/seekBarSize"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorFondoPizarra" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toLeftOf="@+id/buttonMenu"
+       android:layout_alignBottom="@+id/buttonMenu"
+       android:layout_alignTop="@+id/buttonMenu" 
+       android:background="@color/colorFondoScrollView"
+       android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                 android:id="@+id/buttonBorrar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:layout_marginRight="@dimen/margen_textView"
+                 android:layout_toRightOf="@+id/buttonGuardar"
+                 android:background="@drawable/button_borrar_selector" />
+
+             <Button
+                 android:id="@+id/buttonGuardar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:layout_marginRight="@dimen/margen_textView"
+                 android:layout_toRightOf="@+id/buttonFoto"
+                 android:background="@drawable/button_guardar_selector" />
+
+             <Button
+                 android:id="@+id/buttonFoto"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:layout_marginRight="@dimen/margen_textView"
+                 android:layout_toRightOf="@+id/buttonCompartir"
+                 android:background="@drawable/boton_foto_selector" />
+
+             <Button
+                 android:id="@+id/buttonCompartir"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="@dimen/margen_textView"
+                 android:background="@drawable/button_compartir_selector" />
+
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

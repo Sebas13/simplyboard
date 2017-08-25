@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/ocultarCosas"
+        android:orderInCategory="100"
+        android:showAsAction="never" android:icon="@drawable/icono_menu"/>
+    <group android:id="@+id/group1">
+        <item android:id="@+id/compartir" android:icon="@drawable/boton_compartir"></item>
+        <item android:id="@+id/guardar" android:icon="@drawable/boton_guardar"></item>
+    </group>
+
+</menu>
